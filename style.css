@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: rgb(230, 230, 230);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ddd;
+
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.container {
+  height: 80vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 26px;
+  box-shadow: 5px 10px #888888;
+}
+
+.input {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  margin: 1px 20px;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.input #text-top {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.input #text-bottom {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.grid {
+  flex: 3;
+
+  background-color: var(--secondary-color);
+  height: 60%;
+  width: 100%;
+  border-radius: 26px;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.grid div {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 20px;
+  cursor: pointer;
+  width: 22%;
+  border: none;
+  margin: 3px;
+  background-color: #eaeaea;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: #d8d1d1;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-green {
+  color: rgb(94, 255, 94);
+}
+
+.text-red {
+  color: red;
+}
+
+.zero {
+  margin-right: 3px;
+  margin: 3px;
+  width: 45%;
+  border-radius: 20px;
+  border: none;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.zero:hover {
+  background-color: #d8d1d1;
+}

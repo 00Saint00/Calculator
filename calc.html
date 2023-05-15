@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="input">
+
+            <!-- <input type="text"> -->
+            <p id="text-top"></p>
+            <p id="text-bottom"></p>
+        </div>
+
+        <div class="grid">
+            <div class="first">
+                <button id="operation" class="btn text-green" onclick="bye()">C</button>
+                <button id="operation" class="btn  text-green" onclick="button('+')">+/-</button>
+                <button id="operation" class="btn text-green" onclick="button('%')">%</button>
+                <button id="operation" class="btn text-red" onclick="button('/')">/</button>
+            </div>
+
+            <div class="second">
+                <button class="btn " onclick="button(7)">7</button>
+                <button class="btn " onclick="button(8)">8</button>
+                <button class="btn " onclick="button(9)">9</button>
+                <button id="operation" class="btn text-red" onclick="button('*')">X</button>
+            </div>
+
+            <div class="third">
+                <button class="btn" onclick="button(4)">4</button>
+                <button class="btn" onclick="button(5)">5</button>
+                <button class="btn" onclick="button(6)">6</button>
+                <button id="operation" class="btn text-red" onclick="button('-')">-</button>
+            </div>
+
+            <div class="fourth">
+                <button class="btn" onclick="button(1)">1</button>
+                <button class="btn" onclick="button(2)">2</button>
+                <button class="btn" onclick="button(3)">3</button>
+                <button id="operation" class="btn text-red" onclick="button('+')">+</button>
+            </div>
+
+            <div class="fifth">
+                <button class="zero num" onclick="button(0)">0</button>
+                <button class="btn num" onclick="button('.')">.</button>
+                <button id="eqauls" class="btn text-red" onclick="calculate()">=</button>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
